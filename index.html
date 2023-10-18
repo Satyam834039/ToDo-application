@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Heading -->
+    <h1>T O D O</h1>
+    
+    <!-- Input Section -->
+    <div class="input-container">
+      <input class="todo-input" placeholder="Add a new task...">
+      <button class="add-button">
+        <i class="fa fa-plus-circle"></i>
+      </button>
+    </div>
+    
+    <!-- Filter Section -->
+    <div class="filters">
+      <div class="filter" data-filter="completed">Complete</div>
+      <div class="filter" data-filter="pending">Incomplete</div>
+      <div class="delete-all">Delete All</div>
+    </div>
+    
+    <!-- Todo List Container -->
+    <div class="todos-container">
+      <ul class="todos"></ul>
+      <img class="empty-image" src="images/blank.png" style="width:200px;">
+    </div>
+
+    <!-- Count Container -->
+    <div class="count-container">
+      <!-- Count of completed tasks -->
+      <div class="filter">
+        <p class="count" style="color:rgb(23, 241, 121);font-size: 20px;"></p>
+      </div>
+      <!-- Created By -->
+      <div class="filter">
+        <p class="count" style="color:rgb(6, 229, 245);font-size: 20px;">CREATED BY SATYAM</p>
+      </div>
+    </div>
+  </div>
+  <!-- script -->
+  <script src="script/app.js"></script>
+</body>
+</html>
